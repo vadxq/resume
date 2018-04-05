@@ -1,0 +1,100 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{董显林 | 前端开发实习}
+
+\basicInfo{
+  \email{dongxianlin@vadxq.com} \textperiodcentered\ 
+  \phone{17679376618} \textperiodcentered\ 
+  \github[vadxq]{https://github.com/vadxq}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{南昌大学}}{2015.09 -- 至今}
+\textit{在读本科生}\ 光电信息科学与工程, 预计 2019 年 6 月毕业
+%\datedsubsection{\textbf{南昌大学家园工作室}}{2015.10 -- 至今}
+%\textit{前端开发}
+
+\section{\faFolderOpen\  工作经历}
+\datedsubsection{\textbf{南昌大学家园工作室}}{2015.10 -- 至今}
+\textit{前端开发}
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{南昌大学家园网}}{2018年2月 -- 2018年3月}
+% \role{实习}{前端开发}
+\begin{itemize}
+  \item 基于 Nuxtjs 开发 Vue+SSR+PWA 应用实践
+  \item 通过编写第三方插件进行全局错误处理及复用函数提取等
+  \item 使用 Docker 进行服务端部署，利用 Certbot 签发 SSL ，使用 Nginx 反向代理
+  \item 优化网站的 SEO
+\end{itemize}
+
+\datedsubsection{\textbf{云家园信息服务系统}}{2016年7月 -- 至今}
+\begin{itemize}
+  \item 使用 Vue 完成单页应用开发,目前已有50+二级应用
+  \item 提取通用组件，如七牛上传，编辑器等，提高组件复用率，提高开发效率
+  \item 封装通用函数及适用业务逻辑函数，如封装 Ajax 处理各种响应
+  \item 利用 CDN 实现静态资源缓存与分发，优化不同区域的访问速度，提高用户体验
+  \item 曾先后使用 Webhook 和 CI 完成项目自动化持续集成，现通过本地 Build ，推送至 OSS 对象存储
+\end{itemize}
+\datedsubsection{\textbf{校园卡消费记录}}{2017年7月 -- 2017年8月}
+\begin{itemize}
+  \item 使用 JavaScript 开发，深度处理杂乱的数据以满足产品需求
+  \item 使用 Gulp 按需配置热加载，本地代理和 Less 等文件打包等
+ \end{itemize}
+
+%\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
+%\role{\LaTeX, Python}{个人项目}
+%\begin{onehalfspacing}
+%优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+%\begin{itemize}
+%  \item 容易定制和扩展
+%  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
+%  \item 支持 FontAwesome 4.5.0
+%\end{itemize}
+%\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 能够编写语义化的 HTML ，熟悉 CSS 的使用，了解 HTML5/CSS3 ，并能使用部分新特性
+  \item 熟悉 JavaScript 语法和基本特性,了解 ES6 新特性，不断实践并在新项目中应用
+  \item 了解 Vue/Bootstrap 等常见框架类库的使用
+  \item 学习并使用 Gulp , Webpack 等代码构建工具实现前端工程化
+  \item 使用 JavaScript + Koa2/fastify 等框架搭建后端服务，能配合 MongoDB 完成 CRUD
+  \item 了解 HTTP 常见知识,对 HTTP2/WebSocket 等新知识有所了解
+\end{itemize}
+
+%\section{\faHeartO\ 获奖情况}
+%\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+%\datedline{其他奖项}{2015}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 日常使用 Git 等代码管理与团队协作工具
+  \item 日常使用 Linux + VSCode 作为开发环境,熟悉常用命令与配置
+  \item 日常使用 Docker 完成项目的构建与部署，完成 Nginx 的配置，实现反向代理等功能
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
